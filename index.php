@@ -49,7 +49,7 @@ if(isset($_POST['post'])){
 
 		$('#loading').show();
 
-		//Original ajax request for loading first posts 
+		
 		$.ajax({
 			url: "includes/handlers/ajax_load_posts.php",
 			type: "POST",
@@ -78,8 +78,8 @@ if(isset($_POST['post'])){
 					cache:false,
 
 					success: function(response) {
-						$('.posts_area').find('.nextPage').remove(); //Removes current .nextpage 
-						$('.posts_area').find('.noMorePosts').remove(); //Removes current .nextpage 
+						$('.posts_area').find('.nextPage').remove(); 
+						$('.posts_area').find('.noMorePosts').remove(); 
 
 						$('#loading').hide();
 						$('.posts_area').append(response);
@@ -90,7 +90,7 @@ if(isset($_POST['post'])){
 
 			return false;
 
-		}); //End (window).scroll(function())
+		}); 
 
 
 	});

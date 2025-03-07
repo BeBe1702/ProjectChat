@@ -18,7 +18,6 @@ include("includes/header.php"); //Header
 			$user_from_obj = new User($con, $user_from);
 
 			echo $user_from_obj->getFirstAndLastName() . " sent you a friend request!";
-            
 
 			$user_from_friend_array = $user_from_obj->getFriendArray();
 
